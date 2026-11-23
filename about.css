@@ -1,0 +1,158 @@
+     * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0b0f19;
+            color: white;
+            line-height: 1.7;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 8%;
+            background-color: #111827;
+        }
+
+        .logo {
+            font-size: 26px;
+            font-weight: bold;
+            color: #00ff99;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            transition: 0.3s;
+        }
+
+        nav a:hover,
+        nav a.active {
+            color: #00ff99;
+        }
+
+        .about {
+            min-height: 85vh;
+            padding: 60px 8%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .about h1 {
+            font-size: 45px;
+            margin-bottom: 35px;
+            text-align: center;
+        }
+
+        .about h1 span {
+            color: #00ff99;
+        }
+
+        .about-box {
+            max-width: 850px;
+            width: 100%;
+            padding: 35px;
+            background-color: #111827;
+            border: 1px solid #263244;
+            border-radius: 15px;
+            box-shadow: 0 0 25px #00ff9910;
+        }
+
+        .about-box h2 {
+            color: #00ff99;
+            margin-bottom: 15px;
+            font-size: 28px;
+        }
+
+        .about-box p {
+            color: #c5ccda;
+            margin-bottom: 18px;
+            font-size: 16px;
+        }
+
+        .details {
+            margin-top: 25px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .detail-card {
+            padding: 18px;
+            background-color: #0b0f19;
+            border-left: 3px solid #00ff99;
+            border-radius: 5px;
+        }
+
+        .detail-card h3 {
+            color: #00ff99;
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+        .detail-card p {
+            margin: 0;
+            font-size: 15px;
+        }
+
+        .goal {
+            margin-top: 30px;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid #00ff99;
+            border-radius: 10px;
+        }
+
+        .goal h3 {
+            color: #00ff99;
+            margin-bottom: 8px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #111827;
+            color: #9ca3af;
+        }
+
+        footer span {
+            color: #00ff99;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0;
+            }
+
+            .about h1 {
+                font-size: 35px;
+            }
+
+            .about-box {
+                padding: 22px;
+            }
+
+            .details {
+                grid-template-columns: 1fr;
+            }
+        }
